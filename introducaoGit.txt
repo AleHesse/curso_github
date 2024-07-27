@@ -1,0 +1,160 @@
+Configurar usuário:
+$ git config --global user.name "Alexandre Hesse"
+
+Configurar email:
+$ git config --global user.email "ale.hesse@gmail.com"
+
+Localização:
+$ pwd
+
+Limpar tela:
+$ crtl + L
+
+Criar pasta:
+$ mkdir suapasta
+
+Entrar pasta:
+$ cd suapasta
+
+Visualizar diretório:
+$ ls
+
+Inicializar Git:
+$ git init
+
+Criar arquivo:
+$ touch teste.txt
+
+Visualização completa:
+$ ls -l
+
+
+Status do Arquivo:
+$ git status
+**Resultado**
+On branch master // mostrar em qual ramo está
+
+No commits yet	// nenhuma alteração ainda 
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        teste.txt	//encontrado arquivo não rastreável
+
+nothing added to commit but untracked files present (use "git add" to track) //nada foi adicionado ao commit(repositório) mas existe um arquivo não restreável precente
+**
+
+
+Adicionar arquivo para o Stage(segundo estado, palco)
+$ git add teste.txt
+
+$ git status  // para verificar
+
+**Resultado**
+On branch master
+No commits yet
+Changes to be committed: // agora existe alterações para serem commitadas
+  (use "git rm --cached <file>..." to unstage)
+        new file:   teste.txt // arquivo agora reconhecido
+**
+
+
+Retirar arquivo do Stage (palco)
+$ git rm --cached seuarqivo
+
+
+Realizar o Commit:
+$ git commit -m "Primeiro Commit"
+
+$ git status  //Verificar...
+**Resultado**
+On branch master
+nothing to commit, working tree clean (nada para commitar... área de trabalho limpa)
+
+
+Realizar o log:
+$ git log  // dados de que realizou o commit
+
+**Resultado**
+commit a19a06a65e8c314ca3c2f5e22dc094f02a57b142 (HEAD -> master)
+Author: Alexandre Hesse <ale.hesse@gmail.com>
+Date:   Thu Jul 11 09:14:57 2024 -0300
+
+    Primeiro commit Realizado
+**
+
+
+// Realizar teste no VScode... ""Abrir o arquivo no vscode e editar um script qualquer ex:
+
+#include<stdio.h>
+
+int main(){
+	return 0;
+}
+
+Salvar e sair... 
+// Retornar ao Git e verificar a operação....
+
+verificando operação:
+$ git status
+**Resultado**
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   teste.txt // Informa que o arquivo foi modificado porém sem mudança no commit
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Realizando o novo commit:(Confirmando a alteração com o commit)
+$ git commit -m "Condigo fonte alterar em linguagem C"
+
+**Resultado**
+[master 05fa0df] Condigo fonte alterar em linguagem C
+ 1 file changed, 4 insertions(+)
+
+
+para deletar projeto:
+cd .. para sair da pasta do projeto
+$rm -rf pastaDoProjeto
+
+
+
+Continua em Diff...
+
+
+Enviando arquivos para o diretório no GitHub
+…or create a new repository on the command line
+echo "# curso_github" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/AleHesse/curso_github.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/AleHesse/curso_github.git
+git branch -M main
+git push -u origin main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
