@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao Git</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        .command {
+            font-family: monospace;
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-radius: 5px;
+            display: block;
+            margin: 5px 0;
+            margin-left: 45px;
+        }
+        .note {
+            font-style: italic;
+            color: #555;
+            margin-left: 45px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Ajuda:</h1>
+    <div class="command">$ git --help</div>
+
+    <div class="section-title">Configurar usuário:</div>
+    <div class="command">$ git config --global user.name "Alexandre Hesse"</div>
+
+    <div class="section-title">Configurar email:</div>
+    <div class="command">$ git config --global user.email "ale.hesse@gmail.com"</div>
+
+    <div class="section-title">Verifica as configurações de nome e email:</div>
+    <div class="command">$ git config user.name</div>
+    <div class="command">$ git config user.email</div>
+
+    <div class="section-title">Mostra o path:</div>
+    <div class="command">$ pwd</div>
+
+    <div class="section-title">Limpar tela:</div>
+    <div class="command">Ctrl + L</div>
+
+    <div class="section-title">Criar pasta:</div>
+    <div class="command">$ mkdir suapasta</div>
+
+    <div class="section-title">Entrar pasta:</div>
+    <div class="command">$ cd suapasta</div>
+
+    <div class="section-title">Visualizar diretório:</div>
+    <div class="command">$ ls</div>
+
+    <div class="section-title">Visualização completa:</div>
+    <div class="command">$ ls -l</div>
+
+    <div class="section-title">Inicializar Git:</div>
+    <div class="command">$ git init</div>
+
+    <div class="section-title">Criar arquivo:</div>
+    <div class="command">$ touch teste.txt</div>
+
+    <div class="section-title">Status do Arquivo:</div>
+    <div class="command">$ git status</div>
+
+    <div class="section-title">Adicionar arquivo para o Stage (segundo estado, palco):</div>
+    <div class="command">$ git add teste.txt</div>
+
+    <div class="section-title">Retirar arquivo do Stage (palco):</div>
+    <div class="command">$ git rm --cached seuarqivo</div>
+
+    <div class="section-title">Realizar o Commit:</div>
+    <div class="command">$ git commit -m "Primeiro Commit"</div>
+
+    <div class="section-title">Visualizar os commit's:</div>
+    <div class="command">$ git log</div>
+    <div class="command">$ git log --oneline</div>
+    <div class="note">obs: Para sair do pager less (END) e voltar ao terminal, você pode pressionar a tecla q.</div>
+
+    <div class="section-title">Visualizar o conteúdo arq:</div>
+    <div class="command">$ cat seuarquivo.extensão</div>
+
+    <div class="section-title">Excluir arquivo:</div>
+    <div class="command">$ git rm nomedoarquivo.extesao</div>
+    <div class="command">$ git commit - "Arquivo Excluído"</div>
+
+    <div class="section-title">Recuperar arquivo:</div>
+    <div class="command">$ git log --diff-filter=D --summary</div>
+    <div class="command">$ git checkout 7b10~1 arq2.txt (primeiros dig do commit + ~1 nomearquivo)</div>
+
+    <div class="section-title">Visualizar alterações:</div>
+    <div class="command">$ git diff</div>
+
+    <div class="section-title">Reverter commit:</div>
+    <div class="command">$ git revert xxxxx (inicio log do commit)</div>
+    <div class="note">Abrir uma janela para exibir a reversão ... só fechar</div>
+
+    <div class="section-title">Deletar projeto:</div>
+    <div class="command">$ cd .. (para sair da pasta do projeto)</div>
+    <div class="command">$ pwd (verificar o diretório)</div>
+    <div class="command">$ rm -rf pastaDoProjeto</div>
+
+</body>
+
+</html>
