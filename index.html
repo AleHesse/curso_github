@@ -8,6 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            font-size: 16px;
         }
         .section-title {
             font-weight: bold;
@@ -33,7 +34,7 @@
 </head>
 
 <body>
-    <h1>Ajuda:</h1>
+    <h1>Comandos GIT</h1>
     <div class="command">$ git --help</div>
 
     <div class="section-title">Configurar usuário:</div>
@@ -103,7 +104,20 @@
 
     <div class="section-title">Reverter commit:</div>
     <div class="command">$ git revert xxxxx (inicio log do commit)</div>
-    <div class="note">Abrir uma janela para exibir a reversão ... só fechar</div>
+    <div class="note">obs: Abre uma janela para exibir a reversão ... só fechar</div>
+
+    <div class="section-title">Remover arq do Stage(palco)</div>
+    <div class="command">$ git rm --cached seuarqivo</div>
+    <div class="command">$ git reset seuarquivo</div>
+    <div class="command">$ git reset</div>
+    <div class="note">obs: remove todos os arquivos do Stage (palco)</div>
+    <div class="command">$ git reset --hard xxxxx(início log commit)</div>
+    <div class="note">obs:ATENÇÃO - Volta no tempo até o log fornecido apagando tudo!!! stage, dirertório e Commit</div>
+
+    <div class="section-title">REVERT X RESET</div>
+    
+    <div class="note">Revert(Mais seguro - Cria um novo commit com as alterações)</div>
+    <div class="note">Reset(Remove as alterações do stage e diretório)</div>
 
     <div class="section-title">Deletar projeto:</div>
     <div class="command">$ cd .. (para sair da pasta do projeto)</div>
