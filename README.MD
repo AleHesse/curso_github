@@ -1,4 +1,4 @@
 # Benvindo ao Github.
-Testando o comando pull para trazer um arquivo criado
-<br>no GitHub para o diretório local.
+Testando o comando pull para trazer um arquivo <br> criado
+no GitHub para o diretório local.
 
