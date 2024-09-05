@@ -1,3 +1,2 @@
 O conteúdo desse arquivo ficará oculto se adicionado ao gitignore ex: 
 
-Senha: 123456
