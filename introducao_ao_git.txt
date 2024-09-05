@@ -12,12 +12,6 @@ $ git config --global user.email "ale.hesse@gmail.com"
 $ git config user.name
 $ git config user.email
 
-## Mostra o path:---------------- $ pwd
-## Limpar tela:------------------ $ crtl + L
-## Criar pasta:------------------ $ mkdir suapasta
-## Entrar pasta:----------------- $ cd suapasta
-## Visualizar diretório:--------- $ ls
-## Visualização completa:-------- $ ls -l
 
 ## Status do Arquivo:------------$ git status
 
