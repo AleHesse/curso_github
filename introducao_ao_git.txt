@@ -1,0 +1,112 @@
+
+## Ajuda:
+$ git  --help
+
+## Configurar usuário:------------$ git config --global user.name "Alexandre Hesse"
+## Configurar email:------------- $ git config --global user.email "ale.hesse@gmail.com"
+
+## Verifica as configurações de nome e email
+----------------------------------$ git config user.name
+----------------------------------$ git config user.email
+
+## Status do Arquivo:------------ $ git status
+## Inicializar Git:-------------- $ git init
+
+## Adicionar arquivo para o Stage(segundo estado, palco)
+----------------------------------$ git add teste.txt
+----------------------------------$ git add . 	(1 ou + arquivos)
+## Retirar arquivo do Stage (palco)
+----------------------------------$ git rm --cached seuarqivo
+
+## Realizar o Commit:------------ $ git commit -m "identifique o seu commit"
+## Visualizar os commit's-------- $ git log  
+----------------------------------$ git log --oneline
+
+## Criar seu repositório no github...
+
+	acessar: https://github.com/AleHesse
+	> No Overview, canto superior esquerdo clicar em + > New Repository
+	> Determinar o nome(Repository name) e definir Public or Private > criar Repository
+
+## Equipamento Local
+
+	## Usando GitBash ou cmd:
+	> Navegar até o local do diretório >  cd.. or cd suapasta or c:
+
+	## Mostra o path:---------------- $ pwd
+	## Limpar tela:------------------ $ crtl + L
+	## Criar pasta:------------------ $ mkdir suapasta
+	## Criar arquivo:---------------- $ touch teste.txt
+	## Visualizar diretório:--------- $ ls
+	## Visualização completa:-------- $ ls -l
+
+	## Usando VSCode: New Directory
+
+	> Criar um novo diretório local > abrir o diretório com VSCode > Dentro do vscode abrir o terminal
+	
+
+echo "# somente_um_teste *opcional..." >> README.md				//opcional
+git init
+git add README.md												//opcional
+git commit -m "first commit"									//first time only
+git branch -M main												//first time only
+git remote add origin https://github.com/AleHesse/teste.git		//first time only
+git push -u origin main											//first time only
+
+## Usando VSCode: Diretório existente
+
+	> Abrir o diretório com VSCode > Dentro do vscode abrir o terminal
+	> No github criar um novo repositório 
+	> obter o HTTPS do mesmo... ex: https://github.com/AleHesse/somente_um_teste.git
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/AleHesse/teste.git
+git branch -M main
+git push -u origin main
+
+## Realizar o upload para github--$git push
+
+### Apos o primeiro Push somente usar $ git push	(Upload)
+--------------------------------------$ git pull	(Download)
+
+
+Obs: Para sair do pager less (END) e voltar ao terminal, você pode pressionar a tecla q.
+
+## Visualizar o conteúdo arq----- $ cat seuarquivo.extensão
+
+## Excluir arquivo:-------------- $ git rm nomedoarquivo.extesao ()
+				$ git commit - "Arquivo Excluído"
+
+## Recuperar arquivo:------------ $ git log --diff-filter=D --summary
+----------------------------------$ git checkout 7b10~1 arq2.txt (primeiros dig do commit + ~1 nomearquivo)
+
+## Visualizar alteraçoes--------- $ git diff
+
+## Reverte commit:--------------- $ git revert xxxxx(inicio log do commit)
+				Abrir uma janema para exibir a reversão ... só fechar
+
+## Deletar projeto:--------------$ cd .. para sair da pasta do projeto
+				$ pwd (verificar o diretório) 
+				$ rm -rf pastaDoProjeto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
