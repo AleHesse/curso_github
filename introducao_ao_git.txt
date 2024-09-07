@@ -1,5 +1,5 @@
 
-## Ajuda:
+## AJUDA ##
 $ git  --help
 
 ## Configurar usuário:------------$ git config --global user.name "Alexandre Hesse"
@@ -91,6 +91,34 @@ Obs: Para sair do pager less (END) e voltar ao terminal, você pode pressionar a
 
 
 
+## GIT BRANCH ##
+
+
+Branches são as ramificações de um projeto.
+no Github é utilizadopara separar e gerenciar as versões do projeto. A branch principal é donomitada "main".
+
+Objetivo da new_branch e podermos trabalho no projeto sem alterar a branch principal.
+
+Craindo uma nova branch:
+
+No Terminal:
+## Exibir branches-----------------$ git branch	
+
+obs: o * mostra em que brach estamos trabalhando.
+OBS: **sempre criar nova branches a paratir a branch principal... MAIN**
+
+## Criar branch--------------------$ git branch sua_new_brench
+## Criar branch e acessa-la direto $ git branch -b sua_new_brench
+
+obs: antes de mudar de branch realizar qualquer commit que esteja faltando.
+
+## Trocar de branch----------------$ git checkout sua_branch_escolhida
+
+OBS: a partir de agora podemos realizar alterações no projeto sem que afetem a branch main (principal)
+
+## Deletar uma branch---------------$ git branch -d sua_branch
+
+OBS: Não esquecer o commit!!! quando mudar de branch.
 
 
 

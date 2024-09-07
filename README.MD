@@ -7,6 +7,6 @@ instalar a extensão:
 Auto-Open Markdown Preview
 
 <h1>Manipulando arquivos com Git</h1>
-Testando
+
 <h2>Experimentando possibilidades</h2>
 

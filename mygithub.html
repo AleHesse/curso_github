@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Git</title>
+</head>
+<body>
+    <h2>AJUDA</h2>
+    <p><code>$ git --help</code></p>
+
+    <h3>Configurar usuário:</h3>
+    <p><code>$ git config --global user.name "Alexandre Hesse"</code></p>
+    
+    <h3>Configurar email:</h3>
+    <p><code>$ git config --global user.email "ale.hesse@gmail.com"</code></p>
+
+    <h3>Verifica as configurações de nome e email:</h3>
+    <p><code>$ git config user.name</code></p>
+    <p><code>$ git config user.email</code></p>
+
+    <h3>Status do Arquivo:</h3>
+    <p><code>$ git status</code></p>
+
+    <h3>Inicializar Git:</h3>
+    <p><code>$ git init</code></p>
+
+    <h3>Adicionar arquivo para o Stage (segundo estado, palco):</h3>
+    <p><code>$ git add teste.txt</code></p>
+    <p><code>$ git add .</code> (1 ou mais arquivos)</p>
+
+    <h3>Retirar arquivo do Stage (palco):</h3>
+    <p><code>$ git rm --cached seuarquivo</code></p>
+
+    <h3>Realizar o Commit:</h3>
+    <p><code>$ git commit -m "identifique o seu commit"</code></p>
+
+    <h3>Visualizar os commits:</h3>
+    <p><code>$ git log</code></p>
+    <p><code>$ git log --oneline</code></p>
+
+    <h3>Criar seu repositório no GitHub:</h3>
+    <p>Acesse: <a href="https://github.com/AleHesse" target="_blank">https://github.com/AleHesse</a></p>
+    <ul>
+        <li>No Overview, canto superior esquerdo, clicar em <strong>+</strong> > <strong>New Repository</strong></li>
+        <li>Determinar o nome (Repository name) e definir Public or Private > criar Repository</li>
+    </ul>
+
+    <h3>Equipamento Local</h3>
+
+    <h4>Usando GitBash ou cmd:</h4>
+    <ul>
+        <li>Navegar até o local do diretório: <code>cd..</code> ou <code>cd suapasta</code> ou <code>c:</code></li>
+        <li>Mostra o path: <code>$ pwd</code></li>
+        <li>Limpar tela: <code>$ crtl + L</code></li>
+        <li>Criar pasta: <code>$ mkdir suapasta</code></li>
+        <li>Criar arquivo: <code>$ touch teste.txt</code></li>
+        <li>Visualizar diretório: <code>$ ls</code></li>
+        <li>Visualização completa: <code>$ ls -l</code></li>
+    </ul>
+
+    <h4>Usando VSCode: New Directory</h4>
+    <ul>
+        <li>Criar um novo diretório local</li>
+        <li>Abrir o diretório com VSCode</li>
+        <li>Dentro do VSCode, abrir o terminal</li>
+    </ul>
+
+    <pre>
+    echo "# somente_um_teste *opcional..." >> README.md  // opcional
+    git init
+    git add README.md                                  // opcional
+    git commit -m "first commit"                       // first time only
+    git branch -M main                                 // first time only
+    git remote add origin https://github.com/AleHesse/teste.git   // first time only
+    git push -u origin main                            // first time only
+    </pre>
+
+    <h4>Usando VSCode: Diretório existente</h4>
+    <ul>
+        <li>Abrir o diretório com VSCode</li>
+        <li>Dentro do VSCode, abrir o terminal</li>
+        <li>No GitHub, criar um novo repositório</li>
+        <li>Obter o HTTPS do repositório: <code>https://github.com/AleHesse/somente_um_teste.git</code></li>
+    </ul>
+
+    <pre>
+    …or push an existing repository from the command line
+    git remote add origin https://github.com/AleHesse/teste.git
+    git branch -M main
+    git push -u origin main
+    </pre>
+
+    <h3>Realizar o upload para GitHub:</h3>
+    <p><code>$ git push</code></p>
+
+    <h4>Após o primeiro push, apenas use:</h4>
+    <p><code>$ git push</code> (Upload)</p>
+    <p><code>$ git pull</code> (Download)</p>
+
+    <p><strong>Obs:</strong> Para sair do pager less (END) e voltar ao terminal, você pode pressionar a tecla <code>q</code>.</p>
+
+    <h3>Visualizar o conteúdo de um arquivo:</h3>
+    <p><code>$ cat seuarquivo.extensão</code></p>
+
+    <h3>Excluir arquivo:</h3>
+    <p><code>$ git rm nomedoarquivo.extensao</code></p>
+    <p><code>$ git commit - "Arquivo Excluído"</code></p>
+
+    <h3>Recuperar arquivo:</h3>
+    <p><code>$ git log --diff-filter=D --summary</code></p>
+    <p><code>$ git checkout 7b10~1 arq2.txt</code> (primeiros dígitos do commit + ~1 nomearquivo)</p>
+
+    <h3>Visualizar alterações:</h3>
+    <p><code>$ git diff</code></p>
+
+    <h3>Reverter commit:</h3>
+    <p><code>$ git revert xxxxx</code> (início do log do commit)</p>
+    <p>Uma janela será aberta para exibir a reversão... apenas feche.</p>
+
+    <h3>Deletar projeto:</h3>
+    <ul>
+        <li><code>$ cd ..</code> para sair da pasta do projeto</li>
+        <li><code>$ pwd</code> (verificar o diretório)</li>
+        <li><code>$ rm -rf pastaDoProjeto</code></li>
+    </ul>
+</body>
+</html>
