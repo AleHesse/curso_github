@@ -120,6 +120,33 @@ OBS: a partir de agora podemos realizar alterações no projeto sem que afetem a
 
 OBS: Não esquecer o commit!!! quando mudar de branch.
 
+## GIT MERGE ##
+
+
+A merge passa pela avaliação do code review(responsável pela aprovação)
+Obs: Certifique-se de estar na "MAIN" para executar a merge.
+
+## Executar a merge-----------------$ git merge sua_branch
+
+Ons: caso vc tenha criado uma branch e a mesma acabou ficando desatualizada em
+relação ao "MAIN" vc pode acessar sua branch e dat um merge a partir dela para o main para atualiza-la. (isso é muito comum em produção)
+
+## GIT STASH ##
+
+O git stash permite que ao estar trabalhando em uma branch e mesmo após várias alterações vc consiga voltar ao estado inicial.
+
+## Executar o stash------------------$ git stash
+
+Obs: o stash cria um hash ex: c35fe16 que vc pode recuperar posteriormente.
+
+## Revertendo stash:
+acesse o branch que vc estava e execute um --$ git stash list
+Obs: o stash cria um indice ID ex: stash@{}
+stash@{0}: blablalllallvlvl
+stash@{1}: blablalllallvlvl
+stash@{2}: blablalllallvlvl
+
+Para visualizar o conteúdo--------------$ git stash show -p x(x=indice desejado)
 
 
 

@@ -124,5 +124,72 @@
         <li><code>$ pwd</code> (verificar o diretório)</li>
         <li><code>$ rm -rf pastaDoProjeto</code></li>
     </ul>
+
+    <h2>GIT BRANCH</h2>
+
+    <p>Branches são as ramificações de um projeto. No GitHub, é utilizado para separar e gerenciar as versões do projeto. A branch principal é denominada "main".</p>
+
+    <p>O objetivo da <strong>new_branch</strong> é permitir trabalhar no projeto sem alterar a branch principal.</p>
+
+    <h3>Criando uma nova branch:</h3>
+
+    <h4>No Terminal:</h4>
+    <p><code>$ git branch</code></p>
+    <p><strong>Obs:</strong> O <code>*</code> mostra em qual branch estamos trabalhando.</p>
+    <p><strong>OBS:</strong> Sempre crie novas branches a partir da branch principal <strong>MAIN</strong>.</p>
+
+    <h4>Criar branch:</h4>
+    <p><code>$ git branch sua_new_branch</code></p>
+
+    <h4>Criar branch e acessá-la diretamente:</h4>
+    <p><code>$ git branch -b sua_new_branch</code></p>
+
+    <p><strong>Obs:</strong> Antes de mudar de branch, realize qualquer commit pendente.</p>
+
+    <h4>Trocar de branch:</h4>
+    <p><code>$ git checkout sua_branch_escolhida</code></p>
+
+    <p><strong>OBS:</strong> A partir de agora, podemos realizar alterações no projeto sem afetar a branch <strong>main</strong> (principal).</p>
+
+    <h4>Deletar uma branch:</h4>
+    <p><code>$ git branch -d sua_branch</code></p>
+
+    <p><strong>OBS:</strong> Não se esqueça do commit ao mudar de branch!</p>
+
+    <h2>GIT MERGE</h2>
+
+    <p>O merge passa pela avaliação do code review (responsável pela aprovação).</p>
+    <p><strong>Obs:</strong> Certifique-se de estar na branch <strong>MAIN</strong> para executar o merge.</p>
+
+    <h4>Executar o merge:</h4>
+    <p><code>$ git merge sua_branch</code></p>
+
+    <p><strong>Obs:</strong> Caso você tenha criado uma branch que ficou desatualizada em relação à <strong>MAIN</strong>, acesse a sua branch e execute um merge a partir dela para a main para atualizá-la. Isso é muito comum em produção.</p>
+
+    <h2>GIT STASH</h2>
+
+    <p>O git stash permite que, ao estar trabalhando em uma branch, mesmo após várias alterações, você consiga voltar ao estado inicial.</p>
+
+    <h4>Executar o stash:</h4>
+    <p><code>$ git stash</code></p>
+
+    <p><strong>Obs:</strong> O stash cria um hash, por exemplo: <code>c35fe16</code>, que você pode recuperar posteriormente.</p>
+
+    <h4>Revertendo stash:</h4>
+    <p>Acesse a branch que você estava e execute <code>$ git stash list</code></p>
+
+    <p><strong>Obs:</strong> O stash cria um índice ID, por exemplo:</p>
+    <pre>
+    stash@{0}: WIP on myfirstbranch: ca4e8ed Criando mygithub.html
+    stash@{1}: WIP on myfirstbranch: ca4e8ed Criando mygithub.html
+    stash@{2}: WIP on myfirstbranch: ca4e8ed Criando mygithub.html
+    </pre>
+
+    <h4>Para visualizar o conteúdo:</h4>
+    <p><code>$ git stash show -p x</code> (onde <code>x</code> é o índice desejado)</p>
+
+    <h4>Para reverter:</h4>
+    <p><code>$ git stash apply x</code> (onde <code>x</code> é o índice desejado)</p>
+
 </body>
 </html>
