@@ -9,6 +9,26 @@ $ git  --help
 ----------------------------------$ git config user.name
 ----------------------------------$ git config user.email
 
+## Usando VSCode: Diretório existente ########################################################
+
+	> No github criar um novo repositório
+	> Abrir o diretório com VSCode > Dentro do vscode abrir o terminal
+	> obter o HTTPS do mesmo... ex: https://github.com/AleHesse/somente_um_teste.git
+
+…or push an existing repository from the command line
+git init
+git add .
+git commit -m "primeiro commit"
+git remote add origin https://github.com/AleHesse/seu_diretorio.git
+git remote -v
+git push origin master
+git status
+
+
+################################################################################################
+
+
+
 ## Status do Arquivo:------------ $ git status
 ## Inicializar Git:-------------- $ git init
 
@@ -53,16 +73,7 @@ git branch -M main												//first time only
 git remote add origin https://github.com/AleHesse/teste.git		//first time only
 git push -u origin main											//first time only
 
-## Usando VSCode: Diretório existente
 
-	> Abrir o diretório com VSCode > Dentro do vscode abrir o terminal
-	> No github criar um novo repositório 
-	> obter o HTTPS do mesmo... ex: https://github.com/AleHesse/somente_um_teste.git
-
-…or push an existing repository from the command line
-git remote add origin https://github.com/AleHesse/teste.git
-git branch -M main
-git push -u origin main
 
 ## Realizar o upload para github--$git push
 
