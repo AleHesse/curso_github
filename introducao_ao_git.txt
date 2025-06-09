@@ -9,6 +9,16 @@ $ git  --help
 ----------------------------------$ git config user.name
 ----------------------------------$ git config user.email
 
+## Clonando um diretório existente no GIT pelo CMD ###########################################
+
+No prompt vá até o diretório raiz dos seus projetos ex: F:\GITHUB dentro delo execute
+git clone https://github.com/AleHesse/seu_diretorio_no_github.git >> enter
+
+Isso já:
+	Cria a pasta com o conteúdo do repositório remoto,
+	Inicializa o Git localmente,
+	E configura o origin (remote) automaticamente.
+
 ## Usando VSCode: Diretório existente ########################################################
 
 	> No github criar um novo repositório
