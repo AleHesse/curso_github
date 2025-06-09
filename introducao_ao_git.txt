@@ -1,5 +1,5 @@
 
-## AJUDA ##
+## AJUDA #####################################################################################
 $ git  --help
 
 ## Configurar usuário:------------$ git config --global user.name "Alexandre Hesse"
@@ -9,17 +9,33 @@ $ git  --help
 ----------------------------------$ git config user.name
 ----------------------------------$ git config user.email
 
+## Criar seu repositório no github...#########################################################
+
+	acessar: https://github.com/AleHesse
+	> No Overview, canto superior esquerdo clicar em + > New Repository
+	> Determinar o nome(Repository name) e definir Public or Private > criar Repository
+
 ## Clonando um diretório existente no GIT pelo CMD ###########################################
 
-No prompt vá até o diretório raiz dos seus projetos ex: F:\GITHUB dentro delo execute
-git clone https://github.com/AleHesse/seu_diretorio_no_github.git >> enter
+No prompt vá até o diretório raiz dos seus projetos ex: F:\GITHUB 
+## Usando GitBash ou cmd:
+	## Pasta anterior:--------------- $ cd..
+	## Acessa pasta:----------------- $ cd sua_pasta
+	## Mostra o path:---------------- $ pwd
+	## Limpar tela:------------------ $ crtl + L
+	## Criar pasta:------------------ $ mkdir suapasta
+	## Criar arquivo:---------------- $ touch teste.txt
+	## Visualizar diretório:--------- $ ls
+	## Visualização completa:-------- $ ls -l
 
+
+## Dentro da sua pasta raiz:------------- $ git clone https://github.com/AleHesse/seu_diretorio_no_github.git >> enter
 Isso já:
 	Cria a pasta com o conteúdo do repositório remoto,
 	Inicializa o Git localmente,
 	E configura o origin (remote) automaticamente.
 
-## Usando VSCode: Diretório existente ########################################################
+## Upload Diretório existente no VSCode ######################################################
 
 	> No github criar um novo repositório
 	> Abrir o diretório com VSCode > Dentro do vscode abrir o terminal
@@ -31,13 +47,10 @@ git add .
 git commit -m "primeiro commit"
 git remote add origin https://github.com/AleHesse/seu_diretorio.git
 git remote -v
-git push origin master
+git push -u origin main ou master
 git status
 
-
-################################################################################################
-
-
+## Comandos ###################################################################################
 
 ## Status do Arquivo:------------ $ git status
 ## Inicializar Git:-------------- $ git init
@@ -52,44 +65,10 @@ git status
 ## Visualizar os commit's-------- $ git log  
 ----------------------------------$ git log --oneline
 
-## Criar seu repositório no github...
-
-	acessar: https://github.com/AleHesse
-	> No Overview, canto superior esquerdo clicar em + > New Repository
-	> Determinar o nome(Repository name) e definir Public or Private > criar Repository
-
-## Equipamento Local
-
-	## Usando GitBash ou cmd:
-	> Navegar até o local do diretório >  cd.. or cd suapasta or c:
-
-	## Mostra o path:---------------- $ pwd
-	## Limpar tela:------------------ $ crtl + L
-	## Criar pasta:------------------ $ mkdir suapasta
-	## Criar arquivo:---------------- $ touch teste.txt
-	## Visualizar diretório:--------- $ ls
-	## Visualização completa:-------- $ ls -l
-
-	## Usando VSCode: New Directory
-
-	> Criar um novo diretório local > abrir o diretório com VSCode > Dentro do vscode abrir o terminal
-	
-
-echo "# somente_um_teste *opcional..." >> README.md				//opcional
-git init
-git add README.md												//opcional
-git commit -m "first commit"									//first time only
-git branch -M main												//first time only
-git remote add origin https://github.com/AleHesse/teste.git		//first time only
-git push -u origin main											//first time only
-
-
-
 ## Realizar o upload para github--$git push
 
 ### Apos o primeiro Push somente usar $ git push	(Upload)
 --------------------------------------$ git pull	(Download)
-
 
 Obs: Para sair do pager less (END) e voltar ao terminal, você pode pressionar a tecla q.
 
@@ -110,10 +89,7 @@ Obs: Para sair do pager less (END) e voltar ao terminal, você pode pressionar a
 				$ pwd (verificar o diretório) 
 				$ rm -rf pastaDoProjeto
 
-
-
-## GIT BRANCH ##
-
+## GIT BRANCH ######################################################################################
 
 Branches são as ramificações de um projeto.
 no Github é utilizadopara separar e gerenciar as versões do projeto. A branch principal é donomitada "main".
@@ -141,8 +117,7 @@ OBS: a partir de agora podemos realizar alterações no projeto sem que afetem a
 
 OBS: Não esquecer o commit!!! quando mudar de branch.
 
-## GIT MERGE ##
-
+## GIT MERGE #######################################################################################
 
 A merge passa pela avaliação do code review(responsável pela aprovação)
 Obs: Certifique-se de estar na "MAIN" para executar a merge.
@@ -152,7 +127,7 @@ Obs: Certifique-se de estar na "MAIN" para executar a merge.
 Ons: caso vc tenha criado uma branch e a mesma acabou ficando desatualizada em
 relação ao "MAIN" vc pode acessar sua branch e dat um merge a partir dela para o main para atualiza-la. (isso é muito comum em produção)
 
-## GIT STASH ##
+## GIT STASH ######################################################################################
 
 O git stash permite que ao estar trabalhando em uma branch e mesmo após várias alterações vc consiga voltar ao estado inicial.
 
