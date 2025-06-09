@@ -50,6 +50,10 @@ git remote -v
 git push -u origin main ou master
 git status
 
+## Atualizar repositório local de acordo com o repositório remoto #############################
+Atualizar os arquivos no branch atual
+git pull
+
 ## Comandos ###################################################################################
 
 ## Status do Arquivo:------------ $ git status
