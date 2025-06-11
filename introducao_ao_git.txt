@@ -94,6 +94,8 @@ Obs: Para sair do pager less (END) e voltar ao terminal, você pode pressionar a
 				$ pwd (verificar o diretório) 
 				$ rm -rf pastaDoProjeto
 
+## Voltar no último commit:------$ git checkout -- nome_do_arquivo
+
 ## GIT BRANCH ######################################################################################
 
 Branches são as ramificações de um projeto.
